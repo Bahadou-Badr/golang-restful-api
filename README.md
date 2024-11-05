@@ -86,4 +86,4 @@ the project code is publicly available somewhere like GitHub.
 
 ### Third-party libraries
 
-- The router [httprouter](https://github.com/julienschmidt/httprouter) 
+- The router [httprouter](https://github.com/julienschmidt/httprouter)
