@@ -84,6 +84,7 @@ This is useful because it prevents other codebases from importing and relying on
 (potentially unversioned and unsupported) packages in our `internal` directory — even if
 the project code is publicly available somewhere like GitHub.
 
-### Third-party libraries
-
-- The router [httprouter](https://github.com/julienschmidt/httprouter)
+###  Working with SQL Migrations
+```
+migrate create -seq -ext .sql -dir ./migrations create_movies_table
+```
