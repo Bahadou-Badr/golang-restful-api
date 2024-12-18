@@ -18,8 +18,7 @@ Ultimately, our Redlight API will support the following endpoints and actions:
 | POST   | /v1/tokens/password-reset    | Generate a new password-reset token                   |
 | GET    | /debug/vars                  | Display application metrics                           |
 
-To give you an idea of what the API will look like from a client’s point of view, by the end of
-this book the `GET /v1/movies/:id` endpoint will return a response similar this
+To give you an idea of what the API will look like from a client’s point of view, the `GET /v1/movies/:id` endpoint will return a response similar this
 ```
 $ curl -H "Authorization: Bearer RIDBIAE3AMMK57T6IAEBUGA7ZQ" localhost:4000/v1/movies/1
 {
