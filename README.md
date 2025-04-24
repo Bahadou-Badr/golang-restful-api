@@ -1,6 +1,26 @@
 A JSON API for retrieving and managing information about movies. You can
 think of the core functionality as being a bit like the [Open Movie Database API](http://www.omdbapi.com/).
 
+### Here’s what I’ve accomplished so far:
+- ✅ Structure and Organization: Implemented an idiomatic and flexible project structure for hashtag#RESTful APIs.
+- ✅ JSON Responses: Designed clear and customizable hashtag#JSON responses while avoiding common pitfalls.
+- ✅ JSON Requests: Parsed incoming requests, validated content, and managed bad requests gracefully.
+- ✅ SQL Migrations: Used SQL migrations to manage database schema changes effectively.
+- ✅ Database Operations: Setting timeouts on queries and optimizing Go’s sql.DB connection pool behavior.
+- ✅ Beyond CRUD: Implementing advanced resource actions like fetching related data and partial updates with optimistic concurrency control.
+- ✅ Filtering, Sorting, and Pagination: Adding these essential features to API endpoints.
+
+### What’s coming next?
+- 📌 Full-Text Search: Leveraging hashtag#PostgreSQL for natural-language data searches.
+- 📌 Rate-Limiting: Enabling per-client request limits for better scalability.
+- 📌 Background Tasks: Safely managing tasks in background goroutines.
+- 📌 Graceful Shutdown: Supporting safe shutdowns, including waiting for background tasks to complete.
+- 📌 Email Workflows: Building workflows for user activation, password resets, and sending emails.
+- 📌 Authentication & Authorization: Adding secure user authentication (stateful tokens and hashtag#JWTs) and permission-based endpoint checks.
+- 📌 CORS Management: Controlling cross-origin requests from front-end applications.
+- 📌 Metrics: Exposing metrics for monitoring API health and performance.
+- 📌 Deployment: Automating deployments on Linux servers and running the API as a background service.
+-----------------------------------------------------------------------------------------------------------------------------------------
 Ultimately, our Redlight API will support the following endpoints and actions:
 
 | Method | URL Pattern                  | Action                                                |
