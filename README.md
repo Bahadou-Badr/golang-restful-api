@@ -8,7 +8,7 @@ think of the core functionality as being a bit like the [Open Movie Database API
 - ✅ SQL Migrations: Used SQL migrations to manage database schema changes effectively.
 - ✅ Database Operations: Setting timeouts on queries and optimizing Go’s sql.DB connection pool behavior.
 - ✅ Beyond CRUD: Implementing advanced resource actions like fetching related data and partial updates with optimistic concurrency control.
-- ✅ Filtering, Sorting, and Pagination: Adding these essential features to API endpoints.
+- ✅ Filtering, Sorting, and Pagination: features for API endpoints.
 
 ### What’s coming next?
 - 📌 Full-Text Search: Leveraging hashtag#PostgreSQL for natural-language data searches.
