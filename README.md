@@ -16,7 +16,7 @@ think of the core functionality as being a bit like the [Open Movie Database API
 - 📌 Background Tasks: Safely managing tasks in background goroutines.
 - 📌 Graceful Shutdown: Supporting safe shutdowns, including waiting for background tasks to complete.
 - 📌 Email Workflows: Building workflows for user activation, password resets, and sending emails.
-- 📌 Authentication & Authorization: Adding secure user authentication (stateful tokens and hashtag#JWTs) and permission-based endpoint checks.
+- 📌 Authentication & Authorization: Adding secure user authentication (stateful tokens and #JWTs) and permission-based endpoint checks.
 - 📌 CORS Management: Controlling cross-origin requests from front-end applications.
 - 📌 Metrics: Exposing metrics for monitoring API health and performance.
 - 📌 Deployment: Automating deployments on Linux servers and running the API as a background service.
@@ -81,7 +81,7 @@ application. This will include the code for running the server, reading and writ
 requests, and managing authentication.
 - The `internal` directory will contain various ancillary packages used by our API. It will
 contain the code for interacting with our database, doing data validation, sending emails
-and so on. Basically, any code which isn’t application-specific and can potentially be
+and so on. Basically, any code that isn’t application-specific and can potentially be
 reused will live in here. Our Go code under `cmd/api` will import the packages in the
 `internal` directory (but never the other way around).
 - The `migrations` directory will contain the SQL migration files for our database.
@@ -92,8 +92,8 @@ production server.
 auditing our Go code, building binaries, and executing database migrations.
 
 It’s important to point out that the directory name `internal` carries a special meaning and
-behavior in Go: any packages which live under this directory can only be imported by code
-inside the parent of the `internal` directory. In our case, this means that any packages which
+behavior in Go: any packages that live under this directory can only be imported by code
+inside the parent of the `internal` directory. In our case, this means that any packages that
 live in `internal` can only be imported by code inside our `Redlight` project directory.
 
 Or, looking at it the other way, this means that any packages under `internal` cannot be
@@ -101,7 +101,7 @@ imported by code outside of our project.
  
 This is useful because it prevents other codebases from importing and relying on the
 (potentially unversioned and unsupported) packages in our `internal` directory — even if
-the project code is publicly available somewhere like GitHub.
+The project code is publicly available somewhere like GitHub.
 
 ###  Working with SQL Migrations
 ```
